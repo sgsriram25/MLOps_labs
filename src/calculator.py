@@ -1,24 +1,25 @@
- # calculator.py
+# calculator.py
 
-def add(x, y):
+def fun1(x, y):
     """Return the sum of x and y"""
     return x + y
 
-def subtract(x, y):
+def fun2(x, y):
     """Return x minus y"""
     return x - y
 
-def multiply(x, y):
+def fun3(x, y):
     """Return x multiplied by y"""
     return x * y
 
-def combine(x, y):
-    """Return the sum of add, multiply, subtract"""
-    return add(x, y) + multiply(x, y) + subtract(x, y)
+def fun4(x, y):
+    """Return the sum of fun1, fun2, fun3"""
+    return fun1(x, y) + fun2(x, y) + fun3(x, y)
 
-from calculator import add, subtract, multiply, combine
 
-print(add(2,3))  
-print(subtract(6,2))  
-print(multiply(3,3))  
-print(combine(2,3))  
+# from calculator import fun1, fun2, fun3, fun4
+
+# print(fun1(2,3))  # 5
+# print(fun2(5,2))  # 3
+# print(fun3(3,4))  # 12
+# print(fun4(2,3))  # 5+(-1)+6=10
