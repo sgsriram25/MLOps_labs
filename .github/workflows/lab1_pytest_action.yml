@@ -27,7 +27,9 @@ jobs:
 
       - name: Run Pytest
         run: |
-          pytest test/test_pytest.py --junitxml=pytest-report.xml
+          # Set PYTHONPATH to include lab1/src so tests can import modules
+          export PYTHONPATH=$PYTHONPATH:lab1/src
+          pytest lab1/test/test_pytest.py --junitxml=pytest-report.xml
 
       - name: Upload test results
         uses: actions/upload-artifact@v4

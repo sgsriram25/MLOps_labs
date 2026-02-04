@@ -26,7 +26,9 @@ jobs:
 
       - name: Run Unittests
         run: |
-          python -m unittest discover -s test -p "test_unittest.py"
+          # Add lab1/src to PYTHONPATH so tests can import modules
+          export PYTHONPATH=$PYTHONPATH:lab1/src
+          python -m unittest discover -s lab1/test -p "test_unittest.py"
 
       - name: Notify success
         if: success()
