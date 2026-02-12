@@ -85,7 +85,7 @@
   - If you see missing-import errors, ensure your virtual environment is active and dependencies are installed.
   - Both scripts use relative paths (e.g., `lab2/models` and `lab2/metrics`), so run commands from repository root to keep behavior consistent.
 
-- ** sequence** (commands):
+- **sequence** (commands):
 
   ```bash
   python -m venv .venv
