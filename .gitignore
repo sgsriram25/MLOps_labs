@@ -2,6 +2,4 @@ lab_01/
 __pycache__/
 *.pyc
 .env
-lab2/data/car.data
-lab2/data/car.csv   
 lab2/models
