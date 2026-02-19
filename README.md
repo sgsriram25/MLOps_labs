@@ -193,6 +193,7 @@ Example: See [lab2/metrics/metrics_20260217_184619.txt](lab2/metrics/metrics_202
 
 **"ValueError: Model accuracy below acceptable threshold!"**
 - The model's accuracy is below 50%. This is intentional behavior to fail CI pipelines. The model may need retraining or the dataset may have changed.
+- **sequence** (commands):
 
 **"ModuleNotFoundError: No module named 'sklearn'"**
 - Ensure your virtual environment is activated and dependencies are installed:
